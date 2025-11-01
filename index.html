@@ -21,3 +21,39 @@
 </body>
 </html>
 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task — Audio</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:16px}
+    figure{margin:0}
+    figcaption{font-size:.95rem;color:#555}
+  </style>
+</head>
+<body>
+  <h1>Audio demo</h1>
+
+  <p>Local WAV with controls + a download fallback:</p>
+  <figure>
+    <audio controls preload="metadata">
+      <!-- put the file in /media on your repo -->
+      <source src="media/harvard.wav" type="audio/wav">
+      Your browser doesn’t support the <code>audio</code> element.
+    </audio>
+    <figcaption>
+      If the player doesn’t appear, you can
+      <a href="media/harvard.wav" download>download the audio</a>.
+    </figcaption>
+  </figure>
+
+  <!-- Optional: short transcript for accessibility -->
+  <h2>Transcript</h2>
+  <p>(Write 2–3 sentences describing the audio content.)</p>
+
+  <p><a href="index.html">← Back to index</a></p>
+</body>
+</html>
